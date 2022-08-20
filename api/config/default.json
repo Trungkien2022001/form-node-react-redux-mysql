@@ -1,0 +1,13 @@
+{
+    "database":{
+        "host": "localhost",
+        "user": "root",
+        "database": "coffee_shop",
+        "password":""
+    },
+    "loginwithfb":{
+        "facebook_key":"",
+        "facebook_secret":"",
+        "callback_url":""
+    }
+}

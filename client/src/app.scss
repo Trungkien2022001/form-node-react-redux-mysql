@@ -1,0 +1,17 @@
+
+
+:root {
+
+}
+.padding___main {
+    padding: 5px 50px;
+    
+    @media only screen and (max-width: 1075px) {
+        padding: 5px 30px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding: 5px 10px;
+    }
+}
+

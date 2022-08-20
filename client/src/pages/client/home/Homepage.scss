@@ -1,0 +1,285 @@
+.product-container{
+    position: relative;
+    .container-header{
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        background-color: beige;
+        .item{
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .product-header{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            font-weight: 600;
+        }
+        .right{
+            font-weight: normal;
+            .p1{
+                display: flex;
+                min-width: 300px;
+                justify-content: space-between;  
+            }
+            .p2{
+                display: flex;
+                min-width: 300px;
+                justify-content: space-between;
+                align-items: center;
+                .p21{
+                    font-size: 19px;
+                }
+                input{
+                    width: 50px;
+                }
+
+            }
+        }
+    }
+    .product{
+        margin: 30px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .product-item{
+            box-shadow: 10px 5px 10px #999;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 20px;
+            min-width: 20%;
+            position: relative;
+            .productImg{
+                width: 100%;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    max-height: 350px
+                };
+            }
+            .productName{
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .productPrice{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .productDetail{
+                font-weight: 600;
+                max-width: 250px;
+                margin-bottom: 15px;
+            }
+            .productDiscount{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                align-items: center;
+                color: #fff;
+                font-size: 18px;
+                background-color: crimson;
+                .discount{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+.chat{
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    img{
+        width: 60px;
+        height: auto;
+    }
+}
+.chatbox{
+    min-width: 300px;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 30px;
+    .chat-header{
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .chat-header-ctn{
+            margin-right: 10px;
+        }
+        .title{
+            margin-left: 10px;
+        }
+    }
+    .chat-container{
+        display: block;
+        overflow-y: scroll;
+        width: 300px;
+        padding: 0px 10px ;
+        height: 300px;
+        background-color: beige;
+        .user-container{
+            font-size: 15px;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: flex-end;
+            .user{
+                display: flex;
+                max-width: 250px;
+                .name{
+                    margin-left: 10px;
+                    font-weight: bold;
+
+                }
+                .message{
+                    background-color: aqua;
+                }
+            }
+        }
+        .other-container{
+            font-size: 15px;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: flex-start;
+            .other{
+                display: flex;
+                max-width: 250px;
+                .name{
+                    margin-right: 10px;
+                    font-weight: bold;
+
+                }
+                .message{
+                    background-color: gold;
+                }
+            }
+        }
+        
+    }
+    .input{
+        input{
+            height: 25px;
+            width: 250px;
+        }
+        button{
+            height: 31px;
+            width:63px;
+            background-color: aqua;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+  
+}
+.popupHomepage{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    .popup-main{
+        width: 700px;
+        .popup-header{
+            text-align: center;
+            font-weight: 600;
+            .ph1{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            .ph2{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        }     
+        .btn-popup{
+            margin-bottom: 30px;
+            margin-left: 35%;
+            display: flex;
+            align-items: center;
+            button{
+                width: 180px;
+                height: 40px;
+                background-color:aqua;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.voucher{
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.voucher-detail{
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    background-color: beige;
+    height: 400px;
+    .voucher-e{
+        // position: absolute;
+        cursor: pointer;
+        text-align: right;
+    }
+    overflow-y: scroll;
+    .voucher-container{
+        // margin-top: 15px;
+        .voucher-item{
+            // border: 1px solid aqua;
+            margin: 0px 10px 20px 10px;
+            .voucher-name{
+                text-align: center;
+                font-weight: 650;
+                font-size: 20px;
+            }
+            .desc{
+
+            }
+            button{
+                margin-left: 40%;
+                border: none;
+                border-radius: 5px;
+                background-color: aqua;
+                font-size: 18px;
+                // width: 60px;
+                cursor: pointer;
+            }
+            .da-nhan{
+                font-size: 18px;
+                // color: aqua;
+                font-weight: 500;
+                margin-left: 80px;
+            }
+        }
+    }
+}
